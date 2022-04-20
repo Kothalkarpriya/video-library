@@ -1,14 +1,16 @@
+@import "./colors.css";
+
 nav {
     display: flex;
     padding: 5px;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: var(--background-col);
 }
 
 .nav-brand-link {
     text-decoration: none;
-    color: white;
+    color: var(--text-col);
 }
 .heading-name, .search-bar, .auth-page{
     margin:0 1rem;
@@ -23,7 +25,7 @@ nav {
 }
 
 .search-icon {
-    color: white;
+    color: var(--text-col);
     margin-left: 10px;
     font-size: large;
 }
