@@ -1,3 +1,4 @@
+import Home from "./Home/Home";
 import Playlist from "./Playlist/Playlist";
 import VideoListing from "./VideoListing/VideoListing";
 import Login from "./Authentication/Login";
@@ -8,6 +9,7 @@ import History from "./History/History";
 import WatchLater from "./WatchLater/WatchLater";
 
 export {
+  Home,
   Playlist,
   VideoListing,
   Login,
