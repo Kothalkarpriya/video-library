@@ -2,10 +2,11 @@
  * Videos Database can be added here.
  * You can add videos of your wish with different attributes
  * */
+import { v4 as uuid } from "uuid";
 
 export const videos = [
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "Computation Thinking & Scratch-Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -17,7 +18,7 @@ export const videos = [
     videoUrl: "https://youtu.be/F0WoVEr0-44",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "C Programming Language -Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -29,7 +30,7 @@ export const videos = [
     videoUrl: "https://youtu.be/ix5jPkxsr7M",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "Arrays and Sorting Algorithms -Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -41,7 +42,7 @@ export const videos = [
     videoUrl: "https://youtu.be/ba7e4mksR5I",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "Memory -Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -53,7 +54,7 @@ export const videos = [
     videoUrl: "https://youtu.be/pejxLkT-wek",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "Data Structure-Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -65,7 +66,7 @@ export const videos = [
     videoUrl: "https://youtu.be/uTZFGXv798o4",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "HTTP, HTML & CSS-Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -77,7 +78,7 @@ export const videos = [
     videoUrl: "https://youtu.be/mudOTSUumXg",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "Python-Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -89,7 +90,7 @@ export const videos = [
     videoUrl: "https://youtu.be/hnDU1G9hWqU",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "Web Programming with Flask-Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
@@ -101,7 +102,7 @@ export const videos = [
     videoUrl: "https://youtu.be/zdgYw-3tzfI",
   },
   {
-    _id: "Wo5dMEP_BbI",
+    _id: uuid(),
     title: "SQL-Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:

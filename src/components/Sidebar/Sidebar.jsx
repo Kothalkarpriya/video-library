@@ -1,4 +1,4 @@
-import "../../assests/styles/home-page.css";
+import "../../assests/styles/sidebar.css";
 import { Link } from "react-router-dom";
 import { AiFillHome, AiOutlineHistory, AiFillLike } from "react-icons/ai";
 import { MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
