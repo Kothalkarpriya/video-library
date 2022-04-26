@@ -1,3 +1,5 @@
+import "../../assests/styles/video-listing.css"
+
 export default function VideoCard({
   id,
   videoTitle,
@@ -7,24 +9,21 @@ export default function VideoCard({
   videoImage,
 }) {
   return (
-    <div className="card">
+    <div className="card video">
       <div className="container">
         <div className="image">
           <img src={videoImage} alt="sunset-and-glass-mug" className="img" />
         </div>
         <div className="text">
-          <h2>{videoTitle}</h2>
+          <h4>{videoTitle}</h4>
         </div>
         <div className="para">
-          {views}||{creator}
+          {views}K views| 10 hours ago
         </div>
         <div className="card-buttons">
           <div className="card-btn">
-            <button type="submit" className="btn card-btn-items">
-              READ
-            </button>
-            <button type="submit" className="btn card-btn-items">
-              BOOKMARK
+            <button type="submit" className="btn">
+              Watch Now
             </button>
           </div>
         </div>

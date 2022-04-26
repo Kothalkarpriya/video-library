@@ -1,0 +1,20 @@
+.videos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.video{
+    padding:0.5rem;
+}
+.video .container{
+    width:250px;
+}
+
+.video .image .img{
+    width: 250px;
+    height:200px;
+}
+.video .text h4{
+    margin:0;
+}
