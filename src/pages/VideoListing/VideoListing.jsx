@@ -3,12 +3,12 @@ import { GetVideo } from "../../context/context";
 import { VideoCard } from "../../components/components";
 
 export default function VideoListing() {
-  const videoList = GetVideo().videos;
+  const { videos } = GetVideo();
 
   return (
     <section className="videos">
       <div className="video">
-        {videoList.map((item) => {
+        {videos.map((item) => {
           return (
             <VideoCard
               id={item._id}
