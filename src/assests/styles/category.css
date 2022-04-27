@@ -1,0 +1,24 @@
+@import "./colors.css";
+
+.video-category{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color:var(--text-col);
+}
+
+.category-heading{
+    font-size:2rem;
+    font-weight: bold;
+}
+.category-container{
+    display:flex;
+    flex-direction: row;
+}
+
+.video-cat{
+    border-radius: 0.5rem;
+    border: 3px solid var(--text-col);
+    margin: 2px;
+    padding:5px;
+}

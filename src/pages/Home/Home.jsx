@@ -1,6 +1,7 @@
 import "../../assests/styles/home-page.css";
 import banner from "../../assests/image/banner.jpg";
 import { Link } from "react-router-dom";
+import { Category } from "../../components/components";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
             </button>
           </div>
         </div>
+        <Category />
       </div>
     </section>
   );
