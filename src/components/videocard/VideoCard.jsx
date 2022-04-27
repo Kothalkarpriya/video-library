@@ -1,4 +1,5 @@
 import "../../assests/styles/video-listing.css"
+import {AddToWatchBtns} from "../components";
 
 export default function VideoCard({
   id,
@@ -17,15 +18,8 @@ export default function VideoCard({
         <div className="text">
           <h4>{videoTitle}</h4>
         </div>
-        <div className="para">
-          {views}K views| 10 hours ago
-        </div>
         <div className="card-buttons">
-          <div className="card-btn">
-            <button type="submit" className="btn">
-              Watch Now
-            </button>
-          </div>
+          <AddToWatchBtns />
         </div>
       </div>
     </div>

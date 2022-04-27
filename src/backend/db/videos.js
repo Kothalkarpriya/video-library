@@ -14,8 +14,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/F0WoVEr0-44/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCyb0oW_6V-oKPK64XalvhC5-OSiA",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/F0WoVEr0-44",
+    category: "Computer Programming",
   },
   {
     _id: uuid(),
@@ -26,8 +26,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/ix5jPkxsr7M/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCQMuwYn6FwORg0pteLpe1KJBHfQQ",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/ix5jPkxsr7M",
+    category: "Computer Programming",
   },
   {
     _id: uuid(),
@@ -38,8 +38,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/ba7e4mksR5I/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLByEsaXW3--CTcFCduyJhvk5Mb_Vw",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/ba7e4mksR5I",
+    category: "Computer Programming",
   },
   {
     _id: uuid(),
@@ -50,8 +50,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/pejxLkT-wek/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCAzU8zcMtztbQXOkj06m4mAwgp0g",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/pejxLkT-wek",
+    category: "Computer Programming",
   },
   {
     _id: uuid(),
@@ -62,8 +62,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/uTZFGXv798o/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAoswg-SX-ImbGlibv3jXFjJuNvSg",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/uTZFGXv798o4",
+    category: "Computer Programming",
   },
   {
     _id: uuid(),
@@ -74,8 +74,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/mudOTSUumXg/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBKis5nrEwdYQQrc26p8lII2EVajA",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/mudOTSUumXg",
+    category: "Frontend Development",
   },
   {
     _id: uuid(),
@@ -86,8 +86,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/hnDU1G9hWqU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBKLEZd4hfwiLxCHaI6ExcKArJcTw",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/hnDU1G9hWqU",
+    category: "Backend Development",
   },
   {
     _id: uuid(),
@@ -98,8 +98,8 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/zdgYw-3tzfI/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAb5DPrrqyOTOYjeOW42S1LN8B40Q",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/zdgYw-3tzfI",
+    category: "Backend Development",
   },
   {
     _id: uuid(),
@@ -110,7 +110,7 @@ export const videos = [
     videoImage:
       "https://i.ytimg.com/vi/TplT4qjz1RQ/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCOLkF5IdycMtoDdyP9fZ0zo6LNjg",
     views: "10",
-    videoCreated: "10",
     videoUrl: "https://youtu.be/TplT4qjz1RQ",
+    category: "Backend Development",
   },
 ];
