@@ -9,7 +9,7 @@ export default function Home() {
       <div className="banner">
         <div className="image img-text ">
           <img src={banner} alt="banner" className="banner-img" />
-          <div className="text text-overlay">
+          <div className="text text-overlay banner-text">
             <p className="banner-name">FullStackDevelopement </p>
             <p className="banner-line">
               Complete Full Stack Developement Videos to help you Learn and
