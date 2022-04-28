@@ -1,0 +1,29 @@
+@import "./colors.css";
+
+.videos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.video{
+    padding:10px;
+    margin:0;
+}
+.video .container{
+    width:250px;
+}
+
+.video .image .img{
+    width: 250px;
+    height:200px;
+}
+.video .text h4{
+    margin:0;
+    color:var(--text-col);
+}
+.video .container{
+    background-color: var(--back-col);
+}
+

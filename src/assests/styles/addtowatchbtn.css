@@ -1,0 +1,9 @@
+@import "./colors.css";
+
+.video-btn{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    color:var(--text-col);
+    font-size: 1.5rem;
+}
