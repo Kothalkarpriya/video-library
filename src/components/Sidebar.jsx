@@ -1,4 +1,4 @@
-import "../../assests/styles/sidebar.css";
+import "../assests/styles/sidebar.css";
 import { Link } from "react-router-dom";
 import { AiFillHome, AiOutlineHistory, AiFillLike } from "react-icons/ai";
 import {

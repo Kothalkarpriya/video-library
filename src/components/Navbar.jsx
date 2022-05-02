@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../assests/styles/navbar.css";
+import "../assests/styles/navbar.css";
 import { FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
