@@ -1,5 +1,8 @@
 @import "./colors.css";
 
-.category-btn{
+.category-btn {
     background-color: var(--light-back-color);
+    box-shadow: var(--all-side-bold-shadow);
+    margin:1rem;
+    color:var(--text-col);
 }

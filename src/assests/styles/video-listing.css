@@ -1,6 +1,6 @@
 @import "./colors.css";
 
-.videos{
+.videos, .video-cards{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -9,7 +9,8 @@
 
 .video{
     padding:10px;
-    margin:0;
+    margin:1rem;
+    box-shadow: var(--all-side-shadow);
 }
 .video .container{
     width:250px;
@@ -19,11 +20,10 @@
     width: 250px;
     height:200px;
 }
-.video .text h4{
+.video .text .title{
     margin:0;
     color:var(--text-col);
 }
 .video .container{
     background-color: var(--back-col);
 }
-

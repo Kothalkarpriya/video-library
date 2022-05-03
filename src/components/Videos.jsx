@@ -12,9 +12,9 @@ export default function Videos() {
     filterSelect === "All"
       ? videoList
       : videoList.filter((videoItem) => videoItem.category === filterSelect);
-
+  console.log(videoList);
   return (
-    <div>
+    <div className="video-cards">
       {filteredList.map((item) => {
         return <VideoCard videoItem={item} key={item._id} />;
       })}
