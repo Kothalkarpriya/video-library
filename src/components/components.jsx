@@ -19,5 +19,5 @@ export {
   CategoryItem,
   Filter,
   FilterButtons,
-  Videos
+  Videos,
 };

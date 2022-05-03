@@ -2,6 +2,7 @@ import React from "react";
 import { useAxios } from "../backend/utils/useAxios";
 import { useFilter } from "../context/context";
 import { FilterButtons } from "./components";
+import "../assests/styles/category.css";
 
 export default function Filter() {
   const { filterDispatch } = useFilter();
@@ -9,9 +10,9 @@ export default function Filter() {
   const { categories } = apiResponse;
   return (
     <div className="category-container">
-      <button
+      <button className="btn category-btn"
         onClick={() => {
-          filterDispatch({ type: "SET_CATEGORY", payload: "ALL" });
+          filterDispatch({ type: "SET_CATEGORY", payload: "All" });
         }}
       >
         All
@@ -20,7 +21,7 @@ export default function Filter() {
         <h4>Loading...</h4>
       ) : (
         categories.map((item) => {
-          return <FilterButtons categoryName={item.categoryName} />;
+          return <FilterButtons categoryName={item.categoryName} key={item._id}/>;
         })
       )}
     </div>
