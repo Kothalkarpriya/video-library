@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assests/styles/footer.css";
+import "../assests/styles/footer.css";
 import {
   AiFillLinkedin,
   AiFillTwitterCircle,

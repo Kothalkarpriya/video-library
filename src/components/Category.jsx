@@ -1,6 +1,7 @@
 import React from "react";
-import { useAxios } from "../../backend/utils/useAxios";
-import "../../assests/styles/category.css";
+import { useAxios } from "../backend/utils/useAxios";
+import { CategoryItem } from "./components";
+import "../assests/styles/category.css";
 
 export default function Category() {
   const { apiResponse, loading } = useAxios("/api/categories");
@@ -13,12 +14,7 @@ export default function Category() {
           <h4>Loading...</h4>
         ) : (
           categories.map((item) => {
-            return (
-              <div className="video-cat">
-                <h3>{item.categoryName}</h3>
-                <p>{item.description}</p>
-              </div>
-            );
+            return <CategoryItem item={item} key={item._id}/>;
           })
         )}
       </div>

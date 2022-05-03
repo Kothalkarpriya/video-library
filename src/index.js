@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-import { VideoContextProvider } from "./context/context";
+import { FilterContextProvider, VideoCategoryContext } from "./context/context";
 
 // Call make Server
 makeServer();
@@ -12,9 +12,11 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <VideoContextProvider>
-        <App />
-      </VideoContextProvider>
+      <VideoCategoryContext>
+        <FilterContextProvider>
+          <App />
+        </FilterContextProvider>
+      </VideoCategoryContext>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
