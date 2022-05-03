@@ -12,7 +12,6 @@ export default function Videos() {
     filterSelect === "All"
       ? videoList
       : videoList.filter((videoItem) => videoItem.category === filterSelect);
-  console.log(videoList);
   return (
     <div className="video-cards">
       {filteredList.map((item) => {
