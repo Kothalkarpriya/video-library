@@ -5,13 +5,14 @@ import { useFilter, useVideoCategory } from "../context/context";
 
 export default function Videos() {
   const { videoList } = useVideoCategory();
-  const { filterState } = useFilter();
-  const filterSelect = filterState;
-
+  const {
+    filterState: { filterSelect },
+  } = useFilter();
   const filteredList =
     filterSelect === "All"
       ? videoList
       : videoList.filter((videoItem) => videoItem.category === filterSelect);
+
   return (
     <div>
       {filteredList.map((item) => {
