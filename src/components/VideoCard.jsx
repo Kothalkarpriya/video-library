@@ -1,7 +1,9 @@
 import "../assests/styles/video-listing.css";
 import { AddToWatchBtns } from "./components";
+import { useNavigate} from "react-router-dom";
 
 export default function VideoCard({ videoItem }) {
+  const navigateVideo = useNavigate();
   return (
     <div className="card video">
       <div className="container">
@@ -10,6 +12,9 @@ export default function VideoCard({ videoItem }) {
             src={videoItem.videoImage}
             alt="sunset-and-glass-mug"
             className="img"
+            onClick={() => {
+              navigateVideo("/VideoCardPage", {state:videoItem});
+            }}
           />
         </div>
         <div className="text">

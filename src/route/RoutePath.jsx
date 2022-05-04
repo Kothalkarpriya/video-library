@@ -10,6 +10,7 @@ import {
   SignUp,
   History,
   WatchLater,
+  VideoCardPage,
 } from "../pages/pages";
 
 export default function RoutePath() {
@@ -24,6 +25,7 @@ export default function RoutePath() {
       <Route path="/Logout" element={<Logout />} />
       <Route path="/Favourites" element={<Favourites />} />
       <Route path="/WatchLater" element={<WatchLater />} />
+      <Route path="/VideoCardPage" element={<VideoCardPage />} />
     </Routes>
   );
 }
