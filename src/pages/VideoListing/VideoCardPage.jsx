@@ -1,6 +1,6 @@
 import "../../assests/styles/video-card-page.css";
 import { useLocation } from "react-router-dom";
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 export default function VideoCardPage(item) {
   const { state } = useLocation();
@@ -9,7 +9,7 @@ export default function VideoCardPage(item) {
     <section>
       <article>
         <div>
-          <ReactPlayer
+          <iframe
             controls
             width="400"
             height="400"
@@ -17,10 +17,10 @@ export default function VideoCardPage(item) {
             loop
             muted
             preload="auto"
+            title={state.title}
             poster={state.videoImage}
             src={state.videoUrl}
-          >
-          </ReactPlayer>
+          ></iframe>
         </div>
       </article>
       <aside></aside>
