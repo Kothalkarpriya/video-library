@@ -27,3 +27,7 @@
 .video .container{
     background-color: var(--back-col);
 }
+
+.video button {
+    width:100%;
+}

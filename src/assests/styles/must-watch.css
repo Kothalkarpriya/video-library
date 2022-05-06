@@ -1,0 +1,6 @@
+@import "./colors.css";
+
+.video-card-page aside .must-watch-video{
+    display: flex;
+    flex-direction: column;
+}

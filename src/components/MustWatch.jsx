@@ -1,9 +1,8 @@
-import React from "react";
+import "../assests/styles/must-watch.css";
 import { VideoCard } from "./components";
-import "../assests/styles/video-listing.css";
 import { useFilter, useVideoCategory } from "../context/context";
 
-export default function Videos() {
+export default function MustWatch() {
   const { videoList } = useVideoCategory();
   const {
     filterState: { filterSelect },
@@ -11,9 +10,9 @@ export default function Videos() {
   const filteredList =
     filterSelect === "All"
       ? videoList
-      : videoList.filter((videoItem) => videoItem.category === filterSelect);
+      : videoList.filter((videoItem) => videoItem.category !== filterSelect);
   return (
-    <div className="video-cards">
+    <div className="must-watch-video">
       {filteredList.map((item) => {
         return <VideoCard videoItem={item} key={item._id} />;
       })}
