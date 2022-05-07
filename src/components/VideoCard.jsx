@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function VideoCard({ videoItem }) {
   const navigateVideo = useNavigate();
+
   return (
     <div className="card video">
       <div className="container">

@@ -4,6 +4,7 @@ import { AddToWatchBtns, MustWatch } from "../../components/components";
 
 export default function VideoCardPage(item) {
   const { state } = useLocation();
+  
   return (
     <section className="video-card-page">
       <article>
@@ -21,7 +22,7 @@ export default function VideoCardPage(item) {
             poster={state.videoImage}
             src={state.videoUrl}
           ></iframe>
-          <AddToWatchBtns videoItem={state.views} key={state._id} />
+          <AddToWatchBtns videoItem={state} key={state._id} />
         </div>
         <div className="video-description">
           <p>
@@ -32,7 +33,6 @@ export default function VideoCardPage(item) {
       </article>
       <aside>
         <h2>Must Watch</h2>
-
         <MustWatch />
       </aside>
     </section>

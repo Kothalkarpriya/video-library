@@ -1,6 +1,6 @@
 @import "./colors.css";
 
-.videos, .video-cards{
+.video-cards{
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;

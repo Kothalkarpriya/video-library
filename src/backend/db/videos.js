@@ -19,18 +19,6 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "First React App: Introduction to ReactJS Library",
-    creator: "Tanay Pratap- Neog Camp",
-    description:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
-    videoImage:
-      "https://i.ytimg.com/vi/F0WoVEr0-44/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCyb0oW_6V-oKPK64XalvhC5-OSiA",
-    views: "20",
-    videoUrl: "https://www.youtube.com/embed/KUJsaM-hAjs",
-    category: "Frontend Development",
-  },
-  {
-    _id: uuid(),
     title: "C Programming Language -Intro to Computer Science",
     creator: "David J. Malan -Harvard University",
     description:
