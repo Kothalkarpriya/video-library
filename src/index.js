@@ -4,7 +4,11 @@ import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
 import { BrowserRouter } from "react-router-dom";
-import { FilterContextProvider, VideoCategoryContext } from "./context/context";
+import {
+  FilterContextProvider,
+  VideoCategoryContext,
+  WatchLaterContextPro,
+} from "./context/context";
 
 // Call make Server
 makeServer();
@@ -14,7 +18,9 @@ ReactDOM.render(
     <BrowserRouter>
       <VideoCategoryContext>
         <FilterContextProvider>
-          <App />
+          <WatchLaterContextPro>
+            <App />
+          </WatchLaterContextPro>
         </FilterContextProvider>
       </VideoCategoryContext>
     </BrowserRouter>

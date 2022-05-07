@@ -8,6 +8,9 @@ import CategoryItem from "./CategoryItem";
 import Filter from "./Filter";
 import FilterButtons from "./FilterButtons";
 import Videos from "./Videos";
+import MustWatch from "./MustWatch";
+import EmptyVideo from "./EmptyVideo";
+import WatchLaterCard from "./WatchLaterCard";
 
 export {
   Navbar,
@@ -20,4 +23,7 @@ export {
   Filter,
   FilterButtons,
   Videos,
+  MustWatch,
+  EmptyVideo,
+  WatchLaterCard,
 };

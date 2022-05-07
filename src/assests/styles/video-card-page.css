@@ -1,0 +1,25 @@
+@import "./colors.css";
+
+section {
+    color: white;
+}
+
+.video-item {
+    width: 90%;
+    height: 25rem;
+}
+
+.video-card-page{
+    display:flex;
+    gap:1rem;
+}
+
+.video-card-page article{
+    width:70%;
+    justify-content: flex-start;
+}
+
+.video-description{
+    text-align: justify;
+    width:90%
+}

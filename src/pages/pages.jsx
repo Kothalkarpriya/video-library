@@ -1,6 +1,7 @@
 import Home from "./Home/Home";
 import Playlist from "./Playlist/Playlist";
 import VideoListing from "./VideoListing/VideoListing";
+import VideoCardPage from "./VideoListing/VideoCardPage";
 import Login from "./Authentication/Login";
 import SignUp from "./Authentication/SignUp";
 import Logout from "./Authentication/Logout";
@@ -18,4 +19,5 @@ export {
   SignUp,
   History,
   WatchLater,
+  VideoCardPage,
 };

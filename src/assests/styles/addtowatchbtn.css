@@ -1,9 +1,32 @@
 @import "./colors.css";
 
-.video-btn{
-    display:flex;
-    justify-content:space-around;
+#video-btn {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    color:var(--text-col);
-    font-size: 1.5rem;
+    color: var(--text-col);
+    font-size: 1rem;
+    width: 90%;
+}
+
+#video-btn .btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#video-btn .btns .btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    background-color: var(--back-col);
+    color: var(--text-col);
+    border: none;
+}
+
+#video-btn .btn:hover {
+    box-shadow: var(--all-side-shadow);
 }
