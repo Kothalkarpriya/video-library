@@ -4,3 +4,9 @@
     display: flex;
     flex-direction: column;
 }
+
+.watch-later-container{
+    display:flex;
+    flex-wrap: wrap;
+    color:var(--text-col);
+}
