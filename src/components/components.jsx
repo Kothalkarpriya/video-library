@@ -11,6 +11,8 @@ import Videos from "./Videos";
 import MustWatch from "./MustWatch";
 import EmptyVideo from "./EmptyVideo";
 import WatchLaterCard from "./WatchLaterCard";
+import LikeVideoCard from "./LikeVideoCard";
+import HistoryCard from "./HistoryCard";
 
 export {
   Navbar,
@@ -26,4 +28,6 @@ export {
   MustWatch,
   EmptyVideo,
   WatchLaterCard,
+  LikeVideoCard,
+  HistoryCard,
 };
