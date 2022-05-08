@@ -1,12 +1,25 @@
 import "../../assests/styles/video-card-page.css";
 import { useLocation } from "react-router-dom";
 import { AddToWatchBtns, MustWatch } from "../../components/components";
+import { useHistory } from "../../context/context";
 
-export default function VideoCardPage(item) {
+export default function VideoCardPage() {
   const { state } = useLocation();
-  
+  const { dispatchHistory } = useHistory();
+  const defaultHistory = {
+    id: state.id,
+    title: state.title,
+    videoImage: state.videoImage,
+    videoUrl: state.videoUrl,
+  };
+
   return (
-    <section className="video-card-page">
+    <section
+      className="video-card-page"
+      onFocus={() =>
+        dispatchHistory({ type: "WATCHED_VIDEO", payload: defaultHistory })
+      }
+    >
       <article>
         <div className="text-align-left">
           <h2>{state.title}</h2>
