@@ -8,6 +8,7 @@ import {
   FilterContextProvider,
   VideoCategoryContext,
   WatchLaterContextPro,
+  LikeVideoContext,
 } from "./context/context";
 
 // Call make Server
@@ -19,7 +20,9 @@ ReactDOM.render(
       <VideoCategoryContext>
         <FilterContextProvider>
           <WatchLaterContextPro>
-            <App />
+            <LikeVideoContext>
+              <App />
+            </LikeVideoContext>
           </WatchLaterContextPro>
         </FilterContextProvider>
       </VideoCategoryContext>
