@@ -5,8 +5,6 @@ import "../../assests/styles/must-watch.css";
 export default function WatchLater() {
   const { state } = useWatchLater();
   const watchLaterItems = state.watchLaterItem;
-  console.log(state);
-  console.log(watchLaterItems);
 
   const watchLaterMapping = () => {
     return watchLaterItems.map((item, index) => {

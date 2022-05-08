@@ -6,9 +6,6 @@ export default function Favourites() {
   const { state } = useLikeVideo();
   const likeVideoItems = state.likeVideoItem;
 
-  console.log(state);
-  console.log(likeVideoItems);
-
   const likeVideoMapping = () => {
     return likeVideoItems.map((item, index) => {
       return (

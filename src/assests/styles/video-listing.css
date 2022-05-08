@@ -1,34 +1,41 @@
 @import "./colors.css";
 
-.video-cards{
-    display:flex;
+.video-cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.video{
-    padding:10px;
-    margin:1rem;
-    box-shadow: var(--all-side-shadow);
+.video {
+    padding: 10px;
+    margin: 1rem;
+
     max-width: fit-content;
 }
-.video .container{
-    width:15rem;
+
+.video:hover {
+    box-shadow: var(--all-side-shadow);
 }
 
-.video .image .img{
+.video .container {
+    width: 15rem;
+}
+
+.video .image .img {
     width: 250px;
-    height:200px;
+    height: 200px;
 }
-.video .text .title{
-    margin:0;
-    color:var(--text-col);
+
+.video .text .title {
+    margin: 0;
+    color: var(--text-col);
 }
-.video .container{
+
+.video .container {
     background-color: var(--back-col);
 }
 
 .video button {
-    width:100%;
+    width: 100%;
 }
