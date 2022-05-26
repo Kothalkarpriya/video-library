@@ -19,8 +19,6 @@ export default function VideoCard({ videoItem }) {
         </div>
         <div className="text">
           <h4 className="title">{videoItem.title}</h4>
-        </div><div className="text">
-          <h4 className="title">{videoItem.title}</h4>
         </div>
         <div className="card-buttons">
           <button
