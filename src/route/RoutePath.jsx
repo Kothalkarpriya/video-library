@@ -11,7 +11,9 @@ import {
   History,
   WatchLater,
   VideoCardPage,
+  PlaylistPage,
 } from "../pages/pages";
+import { Modal } from "../components/components";
 
 export default function RoutePath() {
   return (
@@ -26,6 +28,8 @@ export default function RoutePath() {
       <Route path="/Favourites" element={<Favourites />} />
       <Route path="/WatchLater" element={<WatchLater />} />
       <Route path="/VideoCardPage" element={<VideoCardPage />} />
+      <Route path="/PlaylistPage" element={<PlaylistPage />} />
+      <Route path="/Modal" element={<Modal />} />
     </Routes>
   );
 }

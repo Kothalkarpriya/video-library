@@ -1,7 +1,9 @@
 import { v4 as uuid } from "uuid";
+import { usePlaylistContext } from "../../context/context";
 
 export default function PlaylistReducer(state, action) {
-  const { playlist } = state;
+  const { playlistDetailState } = usePlaylistContext();
+  const { playlist } = playlistDetailState;
 
   switch (action.payload) {
     case "CREATE_PLAYLIST":

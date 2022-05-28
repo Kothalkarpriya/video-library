@@ -1,0 +1,35 @@
+@import "./colors.css";
+
+.playlist-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.playlist-heading button {
+  padding: 0.5rem 1rem;
+  height: max-content;
+}
+
+.playlist-card a {
+  text-decoration: none;
+}
+
+.playlist-card .container .text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.text button {
+  border: none;
+  color: var(--background-col);
+}
+.text h2 {
+  margin: 0;
+}

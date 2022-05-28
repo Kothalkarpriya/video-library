@@ -6,7 +6,7 @@ const PlaylistContext = createContext();
 const PlaylistContextProvider = ({ children }) => {
   const [modalDisplay, setModalDisplay] = useState(false);
   const [playlistModalData, setPlaylistModalData] = useState({});
-  const [playlistDetailState, setPlaylistDetailState] = useReducer(
+  const [playlistDetailState, playlistDetailStateDispatch] = useReducer(
     PlaylistReducer,
     {
       playlist: [],
@@ -20,7 +20,7 @@ const PlaylistContextProvider = ({ children }) => {
         playlistModalData,
         setPlaylistModalData,
         playlistDetailState,
-        setPlaylistDetailState,
+        playlistDetailStateDispatch,
       }}
     >
       {children}
