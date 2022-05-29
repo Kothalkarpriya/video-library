@@ -3,6 +3,7 @@ import { VideoCategoryContext, useVideoCategory } from "./VideoCategoryContext";
 import { WatchLaterContextPro, useWatchLater } from "./WatchLaterContext";
 import { LikeVideoContext, useLikeVideo } from "./LikeVideoContext";
 import { HistoryContextProvider, useHistory } from "./HistoryContext";
+import { PlaylistContextProvider, usePlaylistContext } from "./PlayListContext";
 
 export {
   FilterContextProvider,
@@ -15,4 +16,6 @@ export {
   useLikeVideo,
   HistoryContextProvider,
   useHistory,
+  PlaylistContextProvider,
+  usePlaylistContext,
 };

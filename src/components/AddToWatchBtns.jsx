@@ -2,13 +2,18 @@ import { AiFillLike, AiOutlineShareAlt, AiFillDislike } from "react-icons/ai";
 import { MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
 import "../assests/styles/addtowatchbtn.css";
 import { ItemInWatchLater } from "../backend/utils/watchLaterReducer";
-import { useWatchLater } from "../context/context";
+import {
+  useWatchLater,
+  useLikeVideo,
+  usePlaylistContext,
+} from "../context/context";
 import { ItemInLikeVideos } from "../backend/utils/LikeVideoReducer";
-import { useLikeVideo } from "../context/context";
 
 export default function AddToWatchBtns({ videoItem }) {
   const { dispatchWatchLater } = useWatchLater();
   const { dispatchLike } = useLikeVideo();
+  const { modalDisplay, setModalDisplay, setPlaylistModalData } =
+    usePlaylistContext();
 
   const defaultWatch = {
     id: videoItem.id,
@@ -75,9 +80,21 @@ export default function AddToWatchBtns({ videoItem }) {
           </button>
         )}
 
-        <button className="btn">
-          <MdPlaylistAdd className="btn-icon" /> Add To Playlist
+        <button
+          className="btn"
+          onClick={() => {
+            if (modalDisplay === true) {
+              setModalDisplay(false);
+            } else {
+              setModalDisplay(true);
+            }
+            setPlaylistModalData(videoItem);
+          }}
+        >
+          <MdPlaylistAdd className="btn-icon" />
+          Add To Playlist
         </button>
+
         <button className="btn">
           <AiOutlineShareAlt className="btn-icon" /> Share
         </button>

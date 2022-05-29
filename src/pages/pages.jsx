@@ -8,6 +8,7 @@ import Logout from "./Authentication/Logout";
 import Favourites from "./Favourites/Favourites";
 import History from "./History/History";
 import WatchLater from "./WatchLater/WatchLater";
+import PlaylistPage from "./Playlist/PlaylistPage";
 
 export {
   Home,
@@ -20,4 +21,5 @@ export {
   History,
   WatchLater,
   VideoCardPage,
+  PlaylistPage
 };
