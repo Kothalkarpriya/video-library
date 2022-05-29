@@ -28,7 +28,7 @@ export default function RoutePath() {
       <Route path="/Favourites" element={<Favourites />} />
       <Route path="/WatchLater" element={<WatchLater />} />
       <Route path="/VideoCardPage" element={<VideoCardPage />} />
-      <Route path="/PlaylistPage" element={<PlaylistPage />} />
+      <Route path="/Playlist/:listId" element={<PlaylistPage />} />
       <Route path="/Modal" element={<Modal />} />
     </Routes>
   );

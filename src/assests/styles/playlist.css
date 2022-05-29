@@ -1,5 +1,15 @@
 @import "./colors.css";
 
+.playlist-container{
+  background-color: var(--back-col);
+  color:var(--text-col);
+  width: max-content;
+  box-shadow: var(--all-side-shadow);
+}
+
+.playlist-container h1{
+  color: var(--text-col);
+}
 .playlist-heading {
   display: flex;
   justify-content: space-between;
@@ -7,11 +17,18 @@
   padding: 1rem;
 }
 
+.playlist-heading div input.text {
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+}
 .playlist-heading button {
   padding: 0.5rem 1rem;
   height: max-content;
 }
 
+.playlist-card {
+  margin: 0;
+}
 .playlist-card a {
   text-decoration: none;
 }
@@ -28,8 +45,31 @@
 
 .text button {
   border: none;
-  color: var(--background-col);
+  background-color: var(--back-col);
+  color: var(--text-col);
 }
+
 .text h2 {
   margin: 0;
+}
+
+.playlist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.playlist .btn {
+  margin: auto;
+}
+
+
+.playlist-btn{
+  margin-bottom: auto;
+}
+
+.playlist-container .text p{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-col);
+  margin: 10px;
 }

@@ -1,46 +1,39 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import "../assests/styles/modal.css";
+import { AiFillDelete } from "react-icons/ai";
+import "../assests/styles/playlist.css";
+import { Link } from "react-router-dom";
 import { usePlaylistContext } from "../context/context";
 
-export default function PlaylistCard({ title, id, key, image, videoUrl }) {
-  const navigate = useNavigate();
+export default function PlaylistCard({ listDetail }) {
+  const { playlistName, videoList, playlistId } = listDetail;
   const { playlistDetailStateDispatch } = usePlaylistContext();
-
-  const defaultPlaylist = {
-    key:key,
-    id: id,
-    title: title,
-    videoImage: image,
-    videoUrl: videoUrl,
-  };
-
   return (
-    <div className="card video">
-      <div className="container">
-        <div className="image">
-          <img src="" alt="video-cover" className="img" />
-        </div>
-        <div className="text">
-          <h4 className="title">Video Title</h4>
-        </div>
-        <div className="card-buttons">
+    <div
+      className="card playlist-card"
+    >
+      <div className="container playlist-container">
+        <div className="text text-align-left">
+          <Link to={`/Playlist/${playlistId}`}>
+            <p >{playlistName}</p>
+            {videoList.length ? (
+              <img
+                alt="video thumbnail"
+                src={`${videoList.at(-1).videoImage}`}
+              />
+            ) : (
+              <h1>{playlistName} playlist is empty</h1>
+            )}
+          </Link>
           <button
-            className="primary-btn btn"
-            onClick={() => navigate("/VideoCardPage")}
-          >
-            Watch Now
-          </button>
-          <button
-            className="primary-btn btn"
             onClick={() =>
               playlistDetailStateDispatch({
-                type: "REMOVE_VIDEO",
-                payload: defaultPlaylist,
+                type: "REMOVE_PLAYLIST",
+                payload: playlistId,
               })
             }
+            className="playlist-btn"
           >
-            Remove
+            <AiFillDelete className="icon" />
           </button>
         </div>
       </div>

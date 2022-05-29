@@ -13,9 +13,9 @@ import EmptyVideo from "./EmptyVideo";
 import WatchLaterCard from "./WatchLaterCard";
 import LikeVideoCard from "./LikeVideoCard";
 import HistoryCard from "./HistoryCard";
-import PlaylistCard from "./PlaylistCard";
+import PlaylistVideoCard from "./PlaylistVideoCard";
 import Modal from "./Modal";
-import SinglePlaylistCard from "./SinglePlaylistCard";
+import PlaylistCard from "./PlaylistCard";
 
 export {
   Navbar,
@@ -33,7 +33,7 @@ export {
   WatchLaterCard,
   LikeVideoCard,
   HistoryCard,
-  PlaylistCard,
+  PlaylistVideoCard,
   Modal,
-  SinglePlaylistCard
+  PlaylistCard
 };

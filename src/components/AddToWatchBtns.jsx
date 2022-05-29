@@ -12,7 +12,8 @@ import { ItemInLikeVideos } from "../backend/utils/LikeVideoReducer";
 export default function AddToWatchBtns({ videoItem }) {
   const { dispatchWatchLater } = useWatchLater();
   const { dispatchLike } = useLikeVideo();
-  const { setModalDisplay } = usePlaylistContext();
+  const { modalDisplay, setModalDisplay, setPlaylistModalData } =
+    usePlaylistContext();
 
   const defaultWatch = {
     id: videoItem.id,
@@ -79,7 +80,17 @@ export default function AddToWatchBtns({ videoItem }) {
           </button>
         )}
 
-        <button className="btn" onClick={() => setModalDisplay(true)}>
+        <button
+          className="btn"
+          onClick={() => {
+            if (modalDisplay === true) {
+              setModalDisplay(false);
+            } else {
+              setModalDisplay(true);
+            }
+            setPlaylistModalData(videoItem);
+          }}
+        >
           <MdPlaylistAdd className="btn-icon" />
           Add To Playlist
         </button>

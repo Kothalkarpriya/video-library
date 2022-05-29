@@ -1,46 +1,57 @@
+import React, { useState } from "react";
 import "../../assests/styles/playlist.css";
-import { PlaylistCard, SinglePlaylistCard } from "../../components/components";
-import { Link } from "react-router-dom";
+import { PlaylistCard } from "../../components/components";
+import { useNavigate } from "react-router-dom";
 import { usePlaylistContext } from "../../context/context";
 
 export default function Playlist() {
-  const { playlist } = usePlaylistContext();
-  const playlistMapping = () => {
-    return playlist.map((index, item) => {
-      return (
-        <PlaylistCard
-          key={item.id}
-          id={item.id}
-          sr={index + 1}
-          title={item.title}
-          Action={"Playlist"}
-        />
-      );
-    });
-  };
+  const navigate = useNavigate();
+  const { playlistDetailState, playlistDetailStateDispatch } =
+    usePlaylistContext();
+  const { playlist } = playlistDetailState;
+  const [newPlaylistName, setNewPlaylistName] = useState("");
   return (
-    <main>
+    <main>  
       <section className="playlist-heading">
-        <h2>My Playlist</h2>
-        <button className="primary-btn btn">Create New Playlist</button>
+        <h2>All Playlist</h2>
+        <div>
+          <input
+            value={newPlaylistName}
+            type="text"
+            onChange={(e) => setNewPlaylistName(e.target.value)}
+            className="text"
+            placeholder="Playlist Name"
+          />
+          <button
+            className="primary-btn btn"
+            onClick={() => {
+              newPlaylistName &&
+                playlistDetailStateDispatch({
+                  type: "CREATE_PLAYLIST",
+                  payload: newPlaylistName,
+                });
+              setNewPlaylistName("");
+            }}
+          >
+            Add New Playlist
+          </button>
+        </div>
       </section>
-      {/* <PlaylistPage /> */}
-      <section className="playlist-card">
-        {playlist ? (
-          playlistMapping()
+      <section className="playlist">
+        {playlist.length ? (
+          playlist.map((item) => {
+            return <PlaylistCard listDetail={item} key={item.playlistId} />;
+          })
         ) : (
-          <Link to="/VideoListing" className="primary-btn btn link">
-            Go to Explore
-          </Link>
+          <button
+            onClick={() => {
+              navigate("/VideoListing");
+            }}
+            className="primary-btn btn text-align-center"
+          >
+            Go To Explore
+          </button>
         )}
-        {/* <PlaylistCard
-          id="id"
-          sr="index+1"
-          title="title"
-          videoUrl="videoUrl"
-          Action="Playlist"
-        /> */}
-        <SinglePlaylistCard />
       </section>
     </main>
   );

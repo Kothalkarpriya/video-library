@@ -11,7 +11,6 @@ export default function History() {
     return history.map((item, index) => {
       return (
         <HistoryCard
-          key={item.id}
           id={item.id}
           sr={index + 1}
           title={item.title}

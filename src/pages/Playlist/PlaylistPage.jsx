@@ -1,21 +1,37 @@
 import "../../assests/styles/playlist.css";
-import { PlaylistCard } from "../../components/components";
+import { PlaylistVideoCard } from "../../components/components";
+import { useParams } from "react-router-dom";
+import { usePlaylistContext } from "../../context/context";
 
 export default function PlaylistPage() {
+  const { listId } = useParams();
+  const { playlistDetailState } = usePlaylistContext();
+  const { playlist } = playlistDetailState;
+  const foundPlaylist = playlist.find((item) => item.playlistId === listId);
+  const { videoList, playlistName } = foundPlaylist;
   return (
     <div>
-      <section className="playlist-heading">
-        <h2>PlaylistName</h2>
-        <button className="primary-btn btn">DeleteThisPlaylist</button>
-      </section>
-      <section className="playlist-card">
-        <PlaylistCard
-          id="id"
-          sr="index+1"
-          title="title"
-          videoUrl="videoUrl"
-          Action="Playlist"
-        />
+      <section>
+        <div className="playlist-heading">
+          <h2>Playlist: {playlistName}</h2>
+        </div>
+
+        <section className="playlist">
+          {videoList.length ? (
+            videoList.map((item) => {
+              return (
+                <PlaylistVideoCard
+                  listDetail={foundPlaylist}
+                  videoItem={item}
+                  key={item._id}
+                  image={videoList.videoImage}
+                />
+              );
+            })
+          ) : (
+            <h1>Your {playlistName} list is empty</h1>
+          )}
+        </section>
       </section>
     </div>
   );

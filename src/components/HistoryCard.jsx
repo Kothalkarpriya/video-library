@@ -6,6 +6,7 @@ export default function HistoryCard({ id, title, image, videoUrl }) {
   const { dispatchHistory } = useHistory();
 
   const defaultHistory = {
+    key: id,
     id: id,
     title: title,
     videoImage: image,
@@ -39,7 +40,10 @@ export default function HistoryCard({ id, title, image, videoUrl }) {
           <button
             className="primary-btn btn"
             onClick={() =>
-              dispatchHistory({ type: "REMOVE_FROM_HISTORY", payload: defaultHistory })
+              dispatchHistory({
+                type: "REMOVE_FROM_HISTORY",
+                payload: defaultHistory,
+              })
             }
           >
             Remove
