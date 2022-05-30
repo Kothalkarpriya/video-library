@@ -1,9 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../assests/styles/navbar.css";
 import { FaSearch } from "react-icons/fa";
+import { useAuth } from "../context/context";
 
 export default function Navbar() {
+  const { authState, logout } = useAuth();
+  const { isLoggedIn } = authState;
   return (
     <nav>
       <div className="heading-name">
@@ -16,9 +19,17 @@ export default function Navbar() {
         <FaSearch className="search-icon" />
       </div>
       <div className="auth-page">
-        <Link className="nav-brand-link" to="/SignUp">
-          <h3>SignUp</h3>
-        </Link>
+        {isLoggedIn === true ? (
+          <NavLink to="/">
+            <button className="btn primary-btn" onClick={() => logout()}>
+              Logout
+            </button>
+          </NavLink>
+        ) : (
+          <NavLink to="/Login">
+            <button className="btn primary-btn">Login</button>
+          </NavLink>
+        )}
       </div>
     </nav>
   );

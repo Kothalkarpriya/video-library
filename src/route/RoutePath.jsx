@@ -5,7 +5,6 @@ import {
   Playlist,
   VideoListing,
   Login,
-  Logout,
   Favourites,
   SignUp,
   History,
@@ -24,7 +23,6 @@ export default function RoutePath() {
       <Route path="/Login" element={<Login />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/History" element={<History />} />
-      <Route path="/Logout" element={<Logout />} />
       <Route path="/Favourites" element={<Favourites />} />
       <Route path="/WatchLater" element={<WatchLater />} />
       <Route path="/VideoCardPage" element={<VideoCardPage />} />
