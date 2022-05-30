@@ -4,6 +4,7 @@ import { WatchLaterContextPro, useWatchLater } from "./WatchLaterContext";
 import { LikeVideoContext, useLikeVideo } from "./LikeVideoContext";
 import { HistoryContextProvider, useHistory } from "./HistoryContext";
 import { PlaylistContextProvider, usePlaylistContext } from "./PlayListContext";
+import { AuthContextProvider, useAuth } from "./AuthContext";
 
 export {
   FilterContextProvider,
@@ -18,4 +19,6 @@ export {
   useHistory,
   PlaylistContextProvider,
   usePlaylistContext,
+  AuthContextProvider,
+  useAuth,
 };

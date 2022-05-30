@@ -11,6 +11,7 @@ import {
   LikeVideoContext,
   HistoryContextProvider,
   PlaylistContextProvider,
+  AuthContextProvider
 } from "./context/context";
 
 // Call make Server
@@ -25,7 +26,9 @@ ReactDOM.render(
             <WatchLaterContextPro>
               <LikeVideoContext>
                 <HistoryContextProvider>
+                  <AuthContextProvider>
                   <App />
+                  </AuthContextProvider>
                 </HistoryContextProvider>
               </LikeVideoContext>
             </WatchLaterContextPro>
