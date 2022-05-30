@@ -11,7 +11,7 @@ import {
   LikeVideoContext,
   HistoryContextProvider,
   PlaylistContextProvider,
-  AuthContextProvider
+  AuthContextProvider,
 } from "./context/context";
 
 // Call make Server
@@ -20,21 +20,21 @@ makeServer();
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <PlaylistContextProvider>
-        <VideoCategoryContext>
-          <FilterContextProvider>
-            <WatchLaterContextPro>
-              <LikeVideoContext>
-                <HistoryContextProvider>
-                  <AuthContextProvider>
-                  <App />
-                  </AuthContextProvider>
-                </HistoryContextProvider>
-              </LikeVideoContext>
-            </WatchLaterContextPro>
-          </FilterContextProvider>
-        </VideoCategoryContext>
-      </PlaylistContextProvider>
+      <AuthContextProvider>
+        <PlaylistContextProvider>
+          <VideoCategoryContext>
+            <FilterContextProvider>
+              <WatchLaterContextPro>
+                <LikeVideoContext>
+                  <HistoryContextProvider>
+                    <App />
+                  </HistoryContextProvider>
+                </LikeVideoContext>
+              </WatchLaterContextPro>
+            </FilterContextProvider>
+          </VideoCategoryContext>
+        </PlaylistContextProvider>
+      </AuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
