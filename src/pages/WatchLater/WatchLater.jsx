@@ -5,6 +5,7 @@ import "../../assests/styles/must-watch.css";
 export default function WatchLater() {
   const { state } = useWatchLater();
   const watchLaterItems = state.watchLaterItem;
+  const { dispatchWatchLater } = useWatchLater();
 
   const watchLaterMapping = () => {
     return watchLaterItems.map((item, index) => {
@@ -23,7 +24,18 @@ export default function WatchLater() {
   };
   return (
     <section>
-      <h2>Your WatchList</h2>
+      <div className="history-container">
+        <h2>Your WatchList</h2>
+        <button
+          className="primary-btn btn"
+          onClick={() => {
+            dispatchWatchLater({ type: "CLEAR_WATCH_LATER" });
+          }}
+        >
+          Clear Watch Later
+        </button>
+      </div>
+
       <div className="watch-later-container">
         {watchLaterItems.length
           ? watchLaterMapping()

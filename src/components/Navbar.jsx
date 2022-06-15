@@ -14,10 +14,10 @@ export default function Navbar() {
           <h1>FullStackDevelopement</h1>
         </Link>
       </div>
-      <div className="search-bar">
+      {/* <div className="search-bar">
         <input placeholder="Search Video" />
         <FaSearch className="search-icon" />
-      </div>
+      </div> */}
       <div className="auth-page">
         {isLoggedIn === true ? (
           <NavLink to="/">

@@ -14,6 +14,11 @@ function WatchLaterReducer(state, action) {
           (item) => item.id !== action.payload.id
         ),
       };
+    case "CLEAR_WATCH_LATER":
+      return {
+        ...state,
+        watchLaterItem: [],
+      };
     default:
       return state;
   }
