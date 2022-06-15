@@ -14,6 +14,11 @@ function LikeVideoReducer(state, action) {
           (item) => item.id !== action.payload.id
         ),
       };
+    case "CLEAR_LIKED_VIDEO":
+      return{
+        ...state,
+        likeVideoItem:[]
+      }
     default:
       return state;
   }

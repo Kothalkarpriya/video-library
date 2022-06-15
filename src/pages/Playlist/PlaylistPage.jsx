@@ -9,7 +9,6 @@ export default function PlaylistPage() {
   const { playlist } = playlistDetailState;
   const foundPlaylist = playlist.find((item) => item.playlistId === listId);
   const { videoList, playlistName } = foundPlaylist;
-  console.log(videoList);
   return (
     <div>
       <section>

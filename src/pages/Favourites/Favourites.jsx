@@ -4,6 +4,7 @@ import "../../assests/styles/must-watch.css";
 
 export default function Favourites() {
   const { state } = useLikeVideo();
+  const { dispatchLike } = useLikeVideo();
   const likeVideoItems = state.likeVideoItem;
 
   const likeVideoMapping = () => {
@@ -23,7 +24,18 @@ export default function Favourites() {
   };
   return (
     <section>
-      <h2>Your Liked Videos</h2>
+      <div className="history-container">
+        <h2>Your Liked Videos</h2>
+        <button
+          className="primary-btn btn"
+          onClick={() => {
+            dispatchLike({ type: "CLEAR_LIKED_VIDEO" });
+          }}
+        >
+          Clear Liked Videos
+        </button>
+      </div>
+
       <div className="watch-later-container">
         {likeVideoItems.length ? likeVideoMapping() : EmptyVideo("Like")}
       </div>

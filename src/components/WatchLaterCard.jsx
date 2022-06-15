@@ -2,6 +2,7 @@ import "../assests/styles/must-watch.css";
 import { useNavigate } from "react-router-dom";
 import {useWatchLater} from "../context/context";
 import "../assests/styles/video-listing.css";
+import { MdWatchLater} from "react-icons/md";
 
 export default function WatchLaterCard({ id, title, image, videoUrl }) {
   const navigateVideo = useNavigate();
@@ -35,7 +36,7 @@ export default function WatchLaterCard({ id, title, image, videoUrl }) {
               navigateVideo("/VideoCardPage", { state: defaultWatch });
             }}
           >
-            Watch Now
+           Watch Now
           </button>
           <button
             className="primary-btn btn"
@@ -43,7 +44,7 @@ export default function WatchLaterCard({ id, title, image, videoUrl }) {
               dispatchWatchLater({ type: "WATCH_DEL", payload: defaultWatch })
             }
           >
-            Remove from Watch Later
+            <MdWatchLater className="btn-icon"/>Remove 
           </button>
         </div>
       </div>
