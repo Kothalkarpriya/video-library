@@ -7,8 +7,8 @@ import { v4 as uuid } from "uuid";
 export const videos = [
   {
     _id: uuid(),
-    title: "Computation Thinking & Scratch-Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "Computation Thinking ",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -19,8 +19,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "C Programming Language -Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "C Programming Language",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -31,8 +31,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "Arrays and Sorting Algorithms -Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "Arrays & Sorting Algorithms",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -43,8 +43,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "Memory -Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "Memory ",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -55,8 +55,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "Data Structure-Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "Data Structure",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -67,8 +67,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "HTTP, HTML & CSS-Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "HTTP, HTML & CSS",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -79,8 +79,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "Python-Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "Python",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -91,8 +91,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "Web Programming with Flask-Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "Web Programming with Flask",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
@@ -103,8 +103,8 @@ export const videos = [
   },
   {
     _id: uuid(),
-    title: "SQL-Intro to Computer Science",
-    creator: "David J. Malan -Harvard University",
+    title: "SQL",
+    creator: "David J. Malan",
     description:
       "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
     videoImage:
