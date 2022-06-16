@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useLikeVideo } from "../context/context";
+import {AiFillDislike} from "react-icons/ai";
 
 export default function LikeVideoCard({ id, title, image, videoUrl }) {
   const navigateVideo = useNavigate();
@@ -41,7 +42,7 @@ export default function LikeVideoCard({ id, title, image, videoUrl }) {
               dispatchLike({ type: "LIKE_DEL", payload: defaultLike })
             }
           >
-            Remove from Favourites
+            Dislike <AiFillDislike className="btn-icon"/>
           </button>
         </div>
       </div>

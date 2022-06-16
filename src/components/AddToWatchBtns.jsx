@@ -1,5 +1,9 @@
-import { AiFillLike, AiOutlineShareAlt, AiFillDislike } from "react-icons/ai";
-import { MdPlaylistAdd, MdOutlineWatchLater } from "react-icons/md";
+import { AiFillLike, AiFillDislike } from "react-icons/ai";
+import {
+  MdPlaylistAdd,
+  MdOutlineWatchLater,
+  MdWatchLater,
+} from "react-icons/md";
 import "../assests/styles/addtowatchbtn.css";
 import { ItemInWatchLater } from "../backend/utils/watchLaterReducer";
 import {
@@ -75,8 +79,8 @@ export default function AddToWatchBtns({ videoItem }) {
               dispatchWatchLater({ type: "WATCH_DEL", payload: defaultWatch })
             }
           >
-            <MdOutlineWatchLater className="btn-icon" />
-            Remove from Watch Later
+            <MdWatchLater className="btn-icon" />
+            Remove
           </button>
         )}
 
@@ -93,10 +97,6 @@ export default function AddToWatchBtns({ videoItem }) {
         >
           <MdPlaylistAdd className="btn-icon" />
           Add To Playlist
-        </button>
-
-        <button className="btn">
-          <AiOutlineShareAlt className="btn-icon" /> Share
         </button>
       </div>
       <div>{videoItem.views}k views</div>

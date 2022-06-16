@@ -11,7 +11,6 @@ function App() {
         <Sidebar />
         <RoutePath />
       </section>
-
       <Footer />
     </div>
   );

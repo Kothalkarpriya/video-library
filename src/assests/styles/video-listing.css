@@ -10,7 +10,6 @@
 .video {
     padding: 10px;
     margin: 1rem;
-
     max-width: fit-content;
 }
 
@@ -28,14 +27,22 @@
 }
 
 .video .text .title {
-    margin: 0;
+    margin: 2px 0;
     color: var(--text-col);
+    font-size: 1rem;
 }
 
+.video .text{
+    margin:1rem 0;
+}
 .video .container {
     background-color: var(--back-col);
 }
 
 .video button {
     width: 100%;
+}
+
+.btn-icon{
+    margin: 0 5px 0 0 ;
 }

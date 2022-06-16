@@ -4,10 +4,15 @@ import "../assests/styles/modal.css";
 import { usePlaylistContext } from "../context/context";
 import { AiFillDelete } from "react-icons/ai";
 
-export default function PlaylistVideoCard({ videoItem, listDetail }) {
+export default function PlaylistVideoCard({ videoItem, listDetail, image }) {
   const navigate = useNavigate();
-  const { playlistDetailStateDispatch } =
-    usePlaylistContext();
+  const { playlistDetailStateDispatch } = usePlaylistContext();
+  const playlistData = {
+    id: videoItem.id,
+    title: videoItem.title,
+    videoImage: image,
+    videoUrl: videoItem.videoUrl,
+  };
 
   return (
     <div className="card video">
@@ -21,7 +26,7 @@ export default function PlaylistVideoCard({ videoItem, listDetail }) {
         <div className="card-buttons">
           <button
             className="primary-btn btn"
-            onClick={() => navigate("/VideoCardPage")}
+            onClick={() => navigate("/VideoCardPage", { state: playlistData })}
           >
             Watch Now
           </button>
@@ -34,7 +39,7 @@ export default function PlaylistVideoCard({ videoItem, listDetail }) {
               })
             }
           >
-           Remove <AiFillDelete />
+            Remove <AiFillDelete />
           </button>
         </div>
       </div>
