@@ -17,5 +17,8 @@ ul {
 
 li {
     display: inline;
-    padding: 1rem;
+    padding: 10px;
+}
+footer p, footer h3{
+    margin: 5px 0;
 }

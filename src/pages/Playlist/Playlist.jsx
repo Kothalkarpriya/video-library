@@ -20,7 +20,7 @@ export default function Playlist() {
             type="text"
             onChange={(e) => setNewPlaylistName(e.target.value)}
             className="text"
-            placeholder="Playlist Name"
+            placeholder="Enter Playlist name here"
           />
           <button
             className="primary-btn btn"
@@ -33,7 +33,7 @@ export default function Playlist() {
               setNewPlaylistName("");
             }}
           >
-            Add New Playlist
+            Create Playlist
           </button>
         </div>
       </section>
