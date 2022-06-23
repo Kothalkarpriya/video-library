@@ -2,7 +2,10 @@
 
 .category-btn {
     background-color: var(--light-back-color);
+    margin: 1rem;
+    color: var(--text-col);
+}
+
+.category-btn:hover {
     box-shadow: var(--all-side-bold-shadow);
-    margin:1rem;
-    color:var(--text-col);
 }
