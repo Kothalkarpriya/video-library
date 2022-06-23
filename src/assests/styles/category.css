@@ -21,4 +21,5 @@
     border: 3px solid var(--text-col);
     margin: 2px;
     padding:5px;
+    width: -webkit-fill-available;
 }

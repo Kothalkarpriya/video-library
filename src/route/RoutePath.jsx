@@ -54,7 +54,14 @@ export default function RoutePath() {
           </RouteAuth>
         }
       />
-      <Route path="/VideoCardPage" element={<VideoCardPage />} />
+      <Route
+        path="/VideoCardPage"
+        element={
+          <RouteAuth>
+            <VideoCardPage />
+          </RouteAuth>
+        }
+      />
       <Route
         path="/Playlist/:listId"
         element={

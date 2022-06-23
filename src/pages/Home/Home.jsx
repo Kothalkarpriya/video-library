@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <section className="home-page">
       <div className="banner">
-        <div className="image img-text ">
+        <div className="image img-text">
           <img src={banner} alt="banner" className="banner-img" />
           <div className="text text-overlay banner-text">
             <p className="banner-name">FullStackDevelopement </p>
