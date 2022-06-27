@@ -64,20 +64,6 @@
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .banner .image {
-        /* width: 400px; */
-    }
-
-}
-
-@media only screen and (max-width:550px) {
-    .banner .image {
-        /* width: 350px; */
-    }
-
-}
-
 @media only screen and (max-width:400px) {
 
     .banner-img {
