@@ -6,7 +6,7 @@
 }
 
 .side-list {
-    font-size: larger;
+    font-size: 1.3rem;
     padding: 1rem;
     display: flex;
     cursor: pointer;
@@ -16,4 +16,32 @@
 
 .side-list:hover {
     background-color: var(--light-back-color);
+}
+
+@media only screen and (max-width: 800px) {
+    .sidebar-container{
+        width: 150px;
+    }
+    
+    .side-list{
+        font-size: 1rem;
+        gap: 5px;
+        padding: 0.5rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .sidebar-container{
+        width:100px;
+    }
+    .side-list{
+        font-size: 0.8rem;
+        gap:2px;
+        padding: 10px;
+    }
+}
+@media only screen and (max-width:600px){
+    .sidebar-container{
+        width: 120px;
+    }
 }

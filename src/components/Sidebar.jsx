@@ -26,7 +26,7 @@ export default function Sidebar() {
       </Link>
       <Link to="/Favourites" className="nav-brand-link side-list">
         <AiFillLike />
-        Liked videos
+        Favourites
       </Link>
       <Link to="/WatchLater" className="nav-brand-link side-list">
         <MdOutlineWatchLater /> WatchLater
