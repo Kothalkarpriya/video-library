@@ -37,4 +37,5 @@
 }
 .banner-text{
     justify-content: right;
+    cursor: pointer;
 }

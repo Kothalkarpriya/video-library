@@ -22,7 +22,7 @@ export default function Sidebar() {
         History
       </Link>
       <Link to="/Playlist" className="nav-brand-link side-list">
-        <MdPlaylistAdd /> Playlist
+        <MdPlaylistAdd /> Playlists
       </Link>
       <Link to="/Favourites" className="nav-brand-link side-list">
         <AiFillLike />

@@ -34,6 +34,7 @@
 
 .video .text{
     margin:1rem 0;
+    cursor: pointer;
 }
 .video .container {
     background-color: var(--back-col);
