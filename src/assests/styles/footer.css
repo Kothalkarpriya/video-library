@@ -8,7 +8,7 @@ footer {
 
 .social-icon {
     color: var(--text-col);
-    font-size: larger;
+    font-size: 1.2rem;
 }
 
 ul {
@@ -23,4 +23,20 @@ li {
 }
 footer p, footer h3{
     margin: 5px 0;
+}
+
+
+
+@media only screen and (max-width:500px) {
+    footer p{
+        font-size: 1rem;
+    }
+    
+    footer h3{
+        font-size: 1.2rem;
+    }
+
+    footer{
+        padding: 5px;
+    }
 }
