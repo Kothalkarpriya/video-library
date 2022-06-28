@@ -6,21 +6,29 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--background-col);
+    box-shadow: var(--bottom-shadow);
+    border-bottom: 1px solid var(--light-color);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
 }
 
 .nav-brand-link {
     text-decoration: none;
     color: var(--text-col);
 }
-.heading-name, .search-bar, .auth-page{
-    margin:0 1rem;
+
+.heading-name,
+.search-bar,
+.auth-page {
+    margin: 0 1rem;
 }
 
 .search-bar input {
     padding: 0.5rem 2rem;
 }
-.search-bar{
-    display:flex;
+
+.search-bar {
+    display: flex;
     align-items: center;
 }
 
@@ -28,4 +36,11 @@ nav {
     color: var(--text-col);
     margin-left: 10px;
     font-size: large;
+}
+
+@media only screen and (max-width:600px) {
+    nav h1 {
+        font-size: 1.3rem;
+    }
+
 }

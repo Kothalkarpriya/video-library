@@ -27,14 +27,60 @@
 .banner .image {
     display: flex;
     position: relative;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
+    box-shadow: var(--all-side-shadow);
+    width: 100%;
+}
+
+.banner .image:hover {
     box-shadow: var(--all-side-bold-shadow);
 }
 
 .banner button {
     background-color: var(--light-back-color);
 }
-.banner-text{
+
+.banner-text {
     justify-content: right;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    .banner-img {
+        height: 280px;
+    }
+
+    .banner .banner-name {
+        font-size: 1.2rem;
+    }
+
+    p {
+        margin: 0.5rem;
+    }
+
+    .banner .banner-line {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:400px) {
+
+    .banner-img {
+        height: 200px;
+    }
+
+    .banner .banner-name {
+        font-size: 1rem;
+    }
+
+    .banner .banner-line {
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .text-overlay {
+        width: 100%;
+    }
 }

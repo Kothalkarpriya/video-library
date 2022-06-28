@@ -14,7 +14,7 @@ export default function Category() {
           <h4>Loading...</h4>
         ) : (
           categories.map((item) => {
-            return <CategoryItem item={item} key={item._id}/>;
+            return <CategoryItem item={item} key={item._id} />;
           })
         )}
       </div>

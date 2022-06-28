@@ -1,5 +1,5 @@
 import "../../assests/styles/home-page.css";
-import banner from "../../assests/image/banner.jpg";
+import banner from "../../assests/image/banner.webp";
 import { Link } from "react-router-dom";
 import { Category } from "../../components/components";
 

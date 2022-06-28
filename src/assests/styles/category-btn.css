@@ -2,10 +2,23 @@
 
 .category-btn {
     background-color: var(--light-back-color);
-    margin: 1rem;
+    margin: 1rem 10px 0 10px;
     color: var(--text-col);
 }
 
+.category-btn:active,
 .category-btn:hover {
     box-shadow: var(--all-side-bold-shadow);
+}
+
+@media only screen and (max-width:800px) {
+    .category-btn.btn {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .category-btn.btn {
+        margin: 0;
+    }
 }

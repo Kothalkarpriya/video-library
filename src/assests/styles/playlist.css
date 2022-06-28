@@ -1,15 +1,16 @@
 @import "./colors.css";
 
-.playlist-container{
+.playlist-container {
   background-color: var(--back-col);
-  color:var(--text-col);
+  color: var(--text-col);
   width: max-content;
   box-shadow: var(--all-side-shadow);
 }
 
-.playlist-container h1{
+.playlist-container h1 {
   color: var(--text-col);
 }
+
 .playlist-heading {
   display: flex;
   justify-content: space-between;
@@ -21,6 +22,7 @@
   padding: 0.5rem 1rem;
   margin-right: 10px;
 }
+
 .playlist-heading button {
   padding: 0.5rem 1rem;
   height: max-content;
@@ -29,6 +31,7 @@
 .playlist-card {
   margin: 0;
 }
+
 .playlist-card a {
   text-decoration: none;
 }
@@ -63,13 +66,26 @@
 }
 
 
-.playlist-btn{
+.playlist-btn {
   margin-bottom: auto;
 }
 
-.playlist-container .text p{
+.playlist-container .text p {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--text-col);
   margin: 10px;
+}
+
+@media only screen and (max-width:500px) {
+  .playlist-heading {
+    padding: 10px;
+  }
+
+
+  .playlist-heading div input.text {
+    padding: 5px 10px;
+    margin: 0;
+  }
+
 }

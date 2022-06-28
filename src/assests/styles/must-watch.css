@@ -22,3 +22,26 @@
     padding: 0.5rem 1rem;
     height: max-content;
 }
+
+@media only screen and (max-width:600px) {
+    .hist {
+        margin-left: 10px;
+    }
+
+    .history-container {
+        padding: 10px;
+    }
+
+    .history-container h2{
+        margin: 10px 0;
+        font-size: 1.2rem;
+    }
+
+    .history-container button, .playlist-heading button{
+        font-size: 0.8rem;
+    }
+    .watch-later-container h3, .playlist-heading h2{
+        font-size: 1rem;
+    }
+
+}
