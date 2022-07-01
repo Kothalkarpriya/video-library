@@ -1,17 +1,20 @@
 @import "./colors.css";
 
-.modal-header .icon{
+.modal-header .icon {
   font-size: 1.5rem;
-  color:var(--text-col);
+  color: var(--text-col);
   font-weight: bold;
 }
-.modal-header .pointer{
+
+.modal-header .pointer {
   background-color: var(--back-col);
 }
-.modal-header .heading{
+
+.modal-header .heading {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .playlist-modal-wrap {
   display: flex;
   justify-content: center;
@@ -23,6 +26,7 @@
   z-index: 99;
   color: white;
 }
+
 .playlist-modal {
   border-radius: 0.5rem;
   border: 3px solid white;
@@ -31,32 +35,38 @@
   height: fit-content;
   padding: 1rem;
 }
+
 .modal-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .display-none {
   display: none;
 }
 
-.textbox{
-  padding:1rem;
+.textbox {
+  padding: 1rem;
 }
-.play{
+
+.play {
   display: flex;
   align-items: center;
   padding: 0.5em;
 }
-.play .text{
+
+.play .text {
   margin: 0;
   font-size: large;
   font-weight: bold;
 }
-.play .textbox{
+
+.play .textbox {
   padding: 0.5rem 1rem;
   height: max-content;
 }
+
 .list-play {
   display: flex;
   align-items: center;

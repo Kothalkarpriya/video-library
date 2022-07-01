@@ -88,3 +88,12 @@
         margin: 0 1rem;
      }
 }
+
+@media only screen and (max-width:400px){
+    .video-cat h3{
+        font-size: 1rem;
+    }
+    .video-cat p{
+        font-size: 0.8rem;
+    }
+}

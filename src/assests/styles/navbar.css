@@ -44,3 +44,13 @@ nav {
     }
 
 }
+
+@media only screen and (max-width:400px){
+    nav h1{
+        font-size: 1.2rem;
+    }
+    .auth-page .btn{
+        font-size: 0.8rem;
+    }
+    
+}

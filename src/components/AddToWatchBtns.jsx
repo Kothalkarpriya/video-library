@@ -99,7 +99,7 @@ export default function AddToWatchBtns({ videoItem }) {
           Add To Playlist
         </button>
       </div>
-      <div>{videoItem.views}k views</div>
+      <div className="view-btn">{videoItem.views}k views</div>
     </section>
   );
 }
