@@ -63,3 +63,43 @@
 .input-block-check input {
      margin-right: 10px;
 }
+
+@media only screen and (max-width:500px) {
+
+     .login,
+     .signup {
+          margin: 2rem auto;
+          padding: 0.5rem;
+          width: 180px;
+     }
+
+     .login-form {
+          padding: 5px;
+     }
+
+     .input-block {
+          margin: 5px;
+     }
+
+     .input-block label {
+          font-size: 1rem;
+     }
+
+     .input-block input {
+          padding: 5px;
+          font-size: 0.7rem;
+     }
+
+     .input-block .btn {
+          padding: 5px 10px;
+     }
+
+     .btn-link-login {
+          font-size:1rem;
+          font-weight: 600;
+     }
+
+     .icon {
+          font-size: 1.4rem;
+     }
+}

@@ -21,22 +21,31 @@ li {
     display: inline;
     padding: 10px;
 }
-footer p, footer h3{
+
+footer p,
+footer h3 {
     margin: 5px 0;
 }
 
-
-
 @media only screen and (max-width:500px) {
-    footer p{
+    footer p {
         font-size: 1rem;
     }
-    
-    footer h3{
+
+    footer h3 {
         font-size: 1.2rem;
     }
 
-    footer{
+    footer {
         padding: 5px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    footer p{
+        font-size: 0.8rem;
+    }
+    footer h3{
+        font-size: 1rem;
     }
 }
