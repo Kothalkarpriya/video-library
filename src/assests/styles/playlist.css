@@ -1,15 +1,16 @@
 @import "./colors.css";
 
-.playlist-container{
+.playlist-container {
   background-color: var(--back-col);
-  color:var(--text-col);
+  color: var(--text-col);
   width: max-content;
   box-shadow: var(--all-side-shadow);
 }
 
-.playlist-container h1{
+.playlist-container h1 {
   color: var(--text-col);
 }
+
 .playlist-heading {
   display: flex;
   justify-content: space-between;
@@ -21,14 +22,17 @@
   padding: 0.5rem 1rem;
   margin-right: 10px;
 }
+
 .playlist-heading button {
   padding: 0.5rem 1rem;
   height: max-content;
+  margin-right: 10px;
 }
 
 .playlist-card {
   margin: 0;
 }
+
 .playlist-card a {
   text-decoration: none;
 }
@@ -62,14 +66,57 @@
   margin: auto;
 }
 
-
-.playlist-btn{
+.playlist-btn {
   margin-bottom: auto;
 }
 
-.playlist-container .text p{
+.playlist-container .text p {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--text-col);
   margin: 10px;
+}
+
+.input-block-input{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width:700px) {
+  .playlist-heading{
+    padding: 0.8rem;
+  }
+
+  .playlist-heading div input.text{
+    padding: 0.5rem;
+  }
+  .playlist-heading h2{
+    margin: 5px 0;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  .playlist-heading {
+    padding: 10px;
+  }
+
+  .playlist-heading div input.text {
+    padding: 5px 10px;
+    margin: 0;
+    /* width: 8rem; */
+    font-size: 0.6rem;
+  }
+
+  .playlist-heading button{
+    margin: 3px 0;
+    padding: 0.5rem;
+  }
+  
+}
+
+@media only screen and (max-width:400px){
+  .playlist-heading{
+    padding: 5px;
+  }
 }

@@ -10,4 +10,5 @@
     --right-bottom-shadow: 15px -10px 15px -15px var(--little-dark-purple);
     --all-side-shadow: 0px 0px 2px 2px var(--little-light-purple);
     --all-side-bold-shadow: 0px 0px 5px 5px var(--little-dark-purple);
+    --top-shadow: 0px -15px 10px -15px var(--light-color);
 }

@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useHistory } from "../context/context";
+import {MdWatchLater} from "react-icons/md";
 
 export default function HistoryCard({ id, title, image, videoUrl }) {
   const navigateVideo = useNavigate();
@@ -46,7 +47,7 @@ export default function HistoryCard({ id, title, image, videoUrl }) {
               })
             }
           >
-            Remove
+            Remove <MdWatchLater/>
           </button>
         </div>
       </div>

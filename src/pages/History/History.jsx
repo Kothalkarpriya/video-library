@@ -23,7 +23,7 @@ export default function History() {
   };
 
   return (
-    <section>
+    <section className="hist">
       <div className="history-container">
         <h2>History</h2>
         <button

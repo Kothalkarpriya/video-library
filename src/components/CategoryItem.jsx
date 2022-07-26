@@ -1,6 +1,7 @@
 import { useFilter } from "../context/FilterContext";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "../assests/styles/category.css";
 
 export default function CategoryItem({ item }) {
   const navigateVideo = useNavigate();

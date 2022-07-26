@@ -1,63 +1,105 @@
 @import "./colors.css";
 
-.login, .signup{
-     margin:3rem auto;
+.login,
+.signup {
+     margin: 3rem auto;
      padding: 1rem;
      width: max-content;
      box-shadow: var(--all-side-shadow);
 }
 
-.heading{
+.heading {
      font-size: 1.5rem;
      margin: auto;
 }
 
-.login-form{
+.login-form {
      padding: 10px 1rem;
 }
 
-.input-block{
-     margin:10px;
+.input-block {
+     margin: 10px;
      align-items: unset;
      padding: 0;
 }
 
-.input-block label{
+.input-block label {
      font-size: 1.2rem;
-     margin-bottom:10px;
+     margin-bottom: 10px;
 }
 
-.input-block input{
-     padding:0.5rem 1rem;
+.input-block input {
+     padding: 0.5rem 1rem;
 }
 
-.input-block .btn-link{
+.input-block .btn-link {
      text-decoration: none;
      color: var(--text-col);
      font-style: italic;
 }
 
-.btn-link-login{
+.btn-link-login {
      font-weight: bold;
      font-size: 1.4rem;
 }
 
-.login-to{
+.login-to {
      display: flex;
      flex-direction: row;
      align-items: center;
 }
 
-.input-block-name{
+.input-block-name {
      display: flex;
 }
 
-.input-block-check{
+.input-block-check {
      font-size: 1.2rem;
      display: flex;
      align-items: center;
      margin: 10px;
 }
-.input-block-check input{
+
+.input-block-check input {
      margin-right: 10px;
+}
+
+@media only screen and (max-width:500px) {
+
+     .login,
+     .signup {
+          margin: 2rem auto;
+          padding: 0.5rem;
+          width: 180px;
+     }
+
+     .login-form {
+          padding: 5px;
+     }
+
+     .input-block {
+          margin: 5px;
+     }
+
+     .input-block label {
+          font-size: 1rem;
+     }
+
+     .input-block input {
+          padding: 5px;
+          font-size: 0.7rem;
+     }
+
+     .input-block .btn {
+          padding: 5px 10px;
+     }
+
+     .btn-link-login {
+          font-size:1rem;
+          font-weight: 600;
+     }
+
+     .icon {
+          font-size: 1.4rem;
+     }
 }

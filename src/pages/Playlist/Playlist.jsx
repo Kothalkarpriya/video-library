@@ -14,13 +14,13 @@ export default function Playlist() {
     <main>  
       <section className="playlist-heading">
         <h2>All Playlist</h2>
-        <div>
+        <div className="input-block-input">
           <input
             value={newPlaylistName}
             type="text"
             onChange={(e) => setNewPlaylistName(e.target.value)}
             className="text"
-            placeholder="Playlist Name"
+            placeholder="Enter Playlist name here"
           />
           <button
             className="primary-btn btn"
@@ -33,7 +33,7 @@ export default function Playlist() {
               setNewPlaylistName("");
             }}
           >
-            Add New Playlist
+            Create Playlist
           </button>
         </div>
       </section>
